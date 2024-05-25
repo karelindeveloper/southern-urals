@@ -354,7 +354,7 @@ const toProd = (done) => {
 const toGit = () => {
   return src("./app/**/*").pipe(
     ghPages({
-      remoteUrl: "https://github.com/KarelinHTM/southural",
+      remoteUrl: "https://github.com/karelindeveloper/southern-urals",
     })
   );
 };
@@ -392,8 +392,7 @@ exports.build = series(
   images,
   webpImages,
   svgSprites,
-  htmlMinify,
-  toGit
+  htmlMinify
 );
 
 exports.cache = series(cache, rewrite);
