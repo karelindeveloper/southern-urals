@@ -1,0 +1,47 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 11;
+  padding: 10px 0;
+
+  &__inner {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    @include big-desktop {
+      width: 125px;
+    }
+
+    &-mobile {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      @include mobile {
+        width: 60vw;
+        top: 15vh;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+      }
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__descr {
+    @include big-desktop {
+      width: 250px;
+    }
+
+    @include mobile {
+      width: 120px;
+    }
+  }
+}

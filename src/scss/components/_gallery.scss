@@ -1,0 +1,42 @@
+.gallery {
+  margin-bottom: 50px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  @include mobile {
+    margin-bottom: 16px;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    padding: 0 15px;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+      row-gap: 30px;
+    }
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__full {
+    grid-column: 12 span;
+    max-width: 100%;
+    overflow: hidden;
+
+    &-img {
+      width: 100%;
+
+      @include mobile {
+        width: 200%;
+        max-width: 200%;
+      }
+    }
+  }
+}

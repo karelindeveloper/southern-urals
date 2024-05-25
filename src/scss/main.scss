@@ -1,0 +1,23 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/swiper";
+@import "./components/hero";
+@import "./components/fonts";
+@import "./components/colors";
+@import "./components/stories";
+@import "./components/video";
+@import "./components/about";
+@import "./components/ornaments";
+@import "./components/gallery";
+@import "./components/banners";
+@import "./components/parallax";
+@import "./components/posts";
+@import "./components/goods";
+@import "./components/tourism";
+@import "./components/footer";

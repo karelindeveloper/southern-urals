@@ -1,0 +1,79 @@
+.goods {
+  margin-bottom: 50px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    max-height: 100vh;
+
+    @include small-tablet {
+      grid-column: 4 span !important;
+    }
+
+    &-1 {
+      grid-column: 4 span;
+    }
+
+    &-2 {
+      grid-column: 5 / 8 span;
+    }
+
+    &-3 {
+      grid-column: 7 span;
+    }
+
+    &-4 {
+      grid-column: 8 / 5 span;
+    }
+
+    &-5 {
+      grid-column: 12 span;
+    }
+
+    &-6 {
+      grid-column: 4 span;
+    }
+
+    &-7 {
+      grid-column: 5 / 8 span;
+    }
+
+    &-8 {
+      grid-column: 7 span;
+    }
+
+    &-9 {
+      grid-column: 8 / 5 span;
+    }
+
+    &-10 {
+      grid-column: 12 span;
+    }
+
+    &-11 {
+      grid-column: 6 span;
+    }
+
+    &-12 {
+      grid-column: 7 / 6 span;
+    }
+
+    &-13 {
+      grid-column: 4 span;
+    }
+
+    &-14 {
+      grid-column: 5 / 8 span;
+    }
+  }
+}

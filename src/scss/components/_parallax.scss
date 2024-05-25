@@ -1,0 +1,63 @@
+.parallax {
+  height: 150vh;
+  background-image: url("../img/parallax.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 50px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  @include small-tablet {
+    height: 100vh;
+    margin-bottom: 16px;
+  }
+
+  @include mobile {
+    height: 70vh;
+  }
+
+  &__inner {
+    height: 100%;
+    padding: 15px;
+  }
+
+  &__row {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+
+    @include small-tablet {
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    width: 25%;
+
+    @include small-tablet {
+      width: 30%;
+    }
+    &-1 {
+      width: 30%;
+      @include small-tablet {
+        width: 35%;
+      }
+    }
+
+    &-2 {
+      margin-bottom: 30px;
+      width: 15%;
+
+      @include small-tablet {
+        width: 20%;
+      }
+    }
+
+    &-3 {
+    }
+  }
+}

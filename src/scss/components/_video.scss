@@ -1,0 +1,72 @@
+.video {
+  margin-top: 112px;
+
+  @include tablet {
+    margin-top: 80px;
+  }
+
+  @include mobile {
+    margin-top: 30px;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  &__tablet {
+    max-width: 1170px;
+    width: 100%;
+    max-height: 612px;
+    object-fit: fill;
+
+    @include big-desktop {
+      max-width: 993px;
+      max-height: 520px;
+    }
+
+    @include tablet {
+      max-width: 735px;
+      max-height: 384px;
+    }
+
+    @include small-tablet {
+      max-width: 545px;
+      max-height: 286px;
+    }
+
+    @include mobile {
+      visibility: hidden;
+    }
+  }
+  &__content {
+    position: absolute;
+    max-width: 990px;
+    position: absolute;
+    left: calc(50% - 3px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @include big-desktop {
+      max-width: 839px;
+    }
+
+    @include tablet {
+      max-width: 623px;
+    }
+
+    @include small-tablet {
+      max-width: 462px;
+    }
+
+    @include mobile {
+      border-radius: 30px;
+      box-shadow: 0px 0px 20px 1px var(--light-color);
+      width: calc(100% - 30px);
+      left: 50%;
+    }
+  }
+}
